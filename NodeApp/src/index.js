@@ -30,6 +30,7 @@ app.use(require('./routes/index'));
 app.use(require('./routes/notes'));
 app.use(require('./routes/users'));
 //static files
+app.use(express.static(patch.join(__dirname,'public')));
 //server is listenning
 app.listen(app.get('port'),() => {
 	console.log('server on port', app.get('port'));

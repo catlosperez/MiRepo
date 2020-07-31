@@ -5,6 +5,6 @@ router.get('/', (req, res) => {
 	res.send('Index');
 });
 router.get('/about', (req, res) => {
-	res.send('aboutttt');
+	res.send('about');
 });
 module.exports = router;
